@@ -1,2 +1,2 @@
 # algorithm
-this is where all the algorithms I solved get uploaded (even those unsolved)
+This is where I upload every algorithms I practice whether it's solved or not :P
