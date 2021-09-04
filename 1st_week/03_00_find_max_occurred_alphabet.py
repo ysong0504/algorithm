@@ -16,7 +16,7 @@ def find_max_occurred_alphabet(string):
         if max_num < arr:
             max_num = arr
 
-        arr_index =start_index - alphabet_occurrence_array[max_num]
+        arr_index = start_index - alphabet_occurrence_array[max_num]
 
     return chr(arr_index)
 

@@ -29,8 +29,12 @@ for _ in range(n):
     floor = n % h
     # 방호수 구하기
     room = math.ceil(n / h)
+    # room = n // h + 1
 
     if floor == 0:  # 만약 floor가 0이라면 최고층이라는 뜻이므로 입력된 층수를 할당해준다.
         floor = h
+
     # 출력 포맷 맞추기 예)12,1 일 시 1201로 출력
+    # room_num = floor * 100 + room
+    # print(room_num)
     print(floor * 100 + room)

@@ -16,7 +16,7 @@ total_bag = 0
 while sugar_kg != 0:
     if sugar_kg % 5 == 0:
         # Case1. 설탕의 무게가 5의 배수라면 5kg 봉지로 계산 후 루프 종료
-        total_bag = sugar_kg / 5 + total_bag
+        total_bag = (sugar_kg / 5) + total_bag
         break
     elif sugar_kg % 5 != 0 and sugar_kg % 3 != 0 and sugar_kg < 3:
         # Case2. 설탕의 무게가 3과 5의 배수가 아니며 3 미만일 경우 계산이 불가하므로 -1 반환
