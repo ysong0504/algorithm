@@ -17,15 +17,23 @@
 # 10000 개의 배열 생성
 
 
-n = 0
-number_list = [False for i in range(200)]
-while n < 20:
+number_list = set(range(1, 10001))
+result = set()
+for i in range(1, 10001):
+    for j in str(i):
+        i += int(j)
+    result.add(i)
+
+ans = sorted(number_list - result)
+
+for i in ans:
+    print(i)
+
     
-    # m = n + (n // 10) + (n // 100) + (n // 1000) + (n // 10000)
-    print(n, n % 10, n % 100, n % 1000, n % 10000 )
-    # if(number_list[m] == False):
-    #     number_list[m] = True
-    n += 1
+
+
+    
+
 
 # for i in range(len(number_list)):
 #     print(number_list[i],i)
