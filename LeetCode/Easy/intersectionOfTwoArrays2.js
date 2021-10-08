@@ -17,7 +17,6 @@
     nums1.sort((a,b) => a - b)
     nums2.sort((a,b) => a - b)
     
-    
     while (nums2.length!=0) {
         // 마지막 인덱스 값을 기준으로 비교 
         if (nums1[nums1.length-1] == nums2[nums2.length-1]) {
@@ -31,7 +30,5 @@
             nums2.pop();
         }
     }
-    
     return arr
-    
 };
